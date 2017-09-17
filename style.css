@@ -9,38 +9,65 @@ body {
 #header-nav {
   display: flex;
   margin-top: 89px; }
+  #header-nav #brand {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around; }
+  #header-nav #space {
+    flex-grow: 3; }
+  #header-nav #navigation {
+    font-size: 18px;
+    text-align: left;
+    color: white;
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-around; }
 
 .helvetica {
   font-family: Helvetica;
   font-weight: bold; }
 
-#brand {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-around; }
+.brand {
+  display: flex; }
+  .brand .logo {
+    width: 4pt;
+    height: 4pt;
+    -webkit-transform: rotate(-315deg);
+    transform: rotate(-315deg);
+    border: solid 6.3px #2c2c2c; }
+  .brand .prospekt {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px; }
 
-#space {
-  flex-grow: 3; }
-
-#navigation {
-  font-size: 18px;
-  text-align: left;
-  color: white;
-  flex-grow: 2;
-  display: flex;
-  justify-content: space-around; }
-
-.prospekt {
-  font-size: 20px;
-  text-align: center;
-  margin-left: 10px; }
-
-.logo {
-  width: 4pt;
-  height: 4pt;
-  -webkit-transform: rotate(-315deg);
-  transform: rotate(-315deg);
-  border: solid 6.3px #2c2c2c; }
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("fonts/KievitSlabOffc-Book.ttf") format("truetype"); }
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("fonts/KievitSlabOffc-Bold.ttf") format("truetype");
+  font-weight: bold; }
+#description {
+  margin-left: 7vw;
+  margin-top: 200px;
+  font-family: KievitSlabOffc; }
+  #description #design-development-branding {
+    opacity: 0.75;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2.7px;
+    color: #454545; }
+  #description #we-are-prospekt {
+    font-size: 58px;
+    line-height: 1.05;
+    letter-spacing: -2.9px;
+    color: black;
+    margin-top: 15px; }
+  #description #design-development {
+    font-size: 58px;
+    letter-spacing: -2.9px;
+    color: #bebebe;
+    margin-top: 6px; }
 
 .bubble {
   z-index: -1;
@@ -65,8 +92,5 @@ body {
   width: 124px;
   height: 124px;
   background-image: linear-gradient(315deg, #000000, #303943); }
-
-.flex-container {
-  display: flex; }
 
 /*# sourceMappingURL=style.css.map */
