@@ -6,6 +6,30 @@ body {
   min-height: 100vw;
   overflow: hidden; }
 
+.helvetica-bold, #header-nav, #description #view-work, #contact-box #email-container #email-form #contact-button {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold; }
+
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("fonts/KievitSlabOffc-Book.ttf") format("truetype"); }
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("fonts/KievitSlabOffc-Bold.ttf") format("truetype");
+  font-weight: bold; }
+.KievitSlab, #description, #desc, #what-we-do, #contact-box #lets-get-in-touch, #contact-box #email-container #email-form #email-input > input {
+  font-family: KievitSlabOffc, sans-serif; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("fonts/MYRIADPRO-REGULAR.OTF"); }
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("fonts/MYRIADPRO-BOLD.OTF");
+  font-weight: bold; }
+.MyriadPro, #chock-full-of-features, #des-dev-mob_web .title, #des-dev-mob_web .description {
+  font-family: MyriadPro, sans-serif; }
+
 #header-nav {
   display: flex;
   margin-top: 89px; }
@@ -23,10 +47,6 @@ body {
     display: flex;
     justify-content: space-around; }
 
-.helvetica {
-  font-family: Helvetica;
-  font-weight: bold; }
-
 .brand {
   display: flex; }
   .brand .logo {
@@ -40,17 +60,9 @@ body {
     text-align: center;
     margin-left: 10px; }
 
-@font-face {
-  font-family: 'KievitSlabOffc';
-  src: url("fonts/KievitSlabOffc-Book.ttf") format("truetype"); }
-@font-face {
-  font-family: 'KievitSlabOffc';
-  src: url("fonts/KievitSlabOffc-Bold.ttf") format("truetype");
-  font-weight: bold; }
 #description {
   margin-left: 7vw;
-  margin-top: 200px;
-  font-family: KievitSlabOffc; }
+  margin-top: 200px; }
   #description #design-development-branding {
     opacity: 0.75;
     font-size: 9px;
@@ -58,16 +70,126 @@ body {
     letter-spacing: 2.7px;
     color: #454545; }
   #description #we-are-prospekt {
+    margin-top: 15px;
     font-size: 58px;
     line-height: 1.05;
     letter-spacing: -2.9px;
-    color: black;
-    margin-top: 15px; }
+    color: black; }
   #description #design-development {
+    margin-top: 6px;
     font-size: 58px;
     letter-spacing: -2.9px;
-    color: #bebebe;
-    margin-top: 6px; }
+    color: #bebebe; }
+  #description #view-work {
+    margin-top: 58px;
+    width: 124px;
+    height: 40px;
+    background-color: #121212;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff; }
+
+.line, #line-1, #line-2 {
+  width: 1px;
+  background-color: #d8d8d8; }
+
+#line-1 {
+  height: 260px; }
+
+#line-2 {
+  margin-top: 54px;
+  height: 131px; }
+
+#desc {
+  margin-top: 35px;
+  width: 711px;
+  font-size: 27px;
+  line-height: 1.37;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #454545; }
+
+.center, .line, #line-1, #line-2, #desc, #what-we-do, #chock-full-of-features, #des-dev-mob_web img {
+  display: table;
+  margin-left: auto;
+  margin-right: auto; }
+
+#what-we-do {
+  margin-top: 121px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: black; }
+
+#chock-full-of-features {
+  margin-top: 36px;
+  font-size: 17px;
+  text-align: center;
+  color: #606060; }
+
+#des-dev-mob_web {
+  margin-top: 89px;
+  display: flex;
+  justify-content: space-around; }
+  #des-dev-mob_web > div {
+    margin-left: 100px;
+    margin-right: 100px; }
+  #des-dev-mob_web .title {
+    margin-top: 89px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: black; }
+  #des-dev-mob_web .description {
+    margin-top: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000000; }
+
+#contact-box {
+  margin-top: 140px;
+  padding-top: 99px;
+  padding-bottom: 99px;
+  width: 100%;
+  background-color: #f7f7f7; }
+  #contact-box #lets-get-in-touch {
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #000000; }
+  #contact-box #email-container {
+    margin-top: 52px;
+    display: flex; }
+    #contact-box #email-container > div {
+      flex-grow: 1; }
+    #contact-box #email-container #email-form {
+      background-color: #ffffff;
+      box-shadow: 0 11px 22px 3px rgba(183, 183, 183, 0.22);
+      display: flex; }
+      #contact-box #email-container #email-form #email-input {
+        flex-grow: 3;
+        padding: 25px 57px; }
+        #contact-box #email-container #email-form #email-input > input {
+          border: 0;
+          font-size: 16px;
+          font-weight: bold;
+          letter-spacing: 0.2px;
+          color: #cccccc; }
+      #contact-box #email-container #email-form #contact-button {
+        flex-grow: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 100%;
+        font-size: 14px;
+        color: #ffffff;
+        background-color: #000000; }
 
 .bubble {
   z-index: -1;

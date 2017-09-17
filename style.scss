@@ -9,11 +9,43 @@ body {
   overflow: hidden;
 }
 
-$header-margin: 89px;
+.helvetica-bold {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
 
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url('fonts/KievitSlabOffc-Book.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url('fonts/KievitSlabOffc-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+.KievitSlab {
+  font-family: KievitSlabOffc, sans-serif;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('fonts/MYRIADPRO-REGULAR.OTF');
+}
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('fonts/MYRIADPRO-BOLD.OTF');
+  font-weight: bold;
+}
+.MyriadPro {
+  font-family: MyriadPro, sans-serif;
+}
+
+$header-margin: 89px;
 #header-nav {
   display: flex;
   margin-top: $header-margin;
+
+  @extend .helvetica-bold;
 
   #brand {
     flex-grow: 1;
@@ -36,12 +68,6 @@ $header-margin: 89px;
   }
 }
 
-.helvetica {
-  font-family: Helvetica;
-  font-weight: bold;
-}
-
-
 .brand {
   display: flex;
 
@@ -60,21 +86,11 @@ $header-margin: 89px;
   }
 }
 
-@font-face {
-  font-family: 'KievitSlabOffc';
-  src: url('fonts/KievitSlabOffc-Book.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'KievitSlabOffc';
-  src: url('fonts/KievitSlabOffc-Bold.ttf') format('truetype');
-  font-weight: bold;
-}
-
 #description {
   margin-left: 7vw;
   margin-top: 200px;
 
-  font-family: KievitSlabOffc;
+  @extend .KievitSlab;
 
   #design-development-branding {
     opacity: 0.75;
@@ -85,20 +101,191 @@ $header-margin: 89px;
   }
 
   #we-are-prospekt {
+    margin-top: 15px;
+
     font-size: 58px;
     line-height: 1.05;
     letter-spacing: -2.9px;
     color: black;
-
-    margin-top: 15px;
   }
 
   #design-development {
+    margin-top: 6px;
+
     font-size: 58px;
     letter-spacing: -2.9px;
     color: #bebebe;
+  }
 
-    margin-top: 6px;
+  $button-height: 40px;
+  #view-work {
+
+    margin-top: 58px;
+
+    width: 124px;
+    height: $button-height;
+    background-color: #121212;
+
+    @extend .helvetica-bold;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: $button-height;
+    color: #ffffff;
+  }
+}
+
+.line {
+  @extend .center;
+  width: 1px;
+  background-color: #d8d8d8;
+}
+
+#line-1 {
+  @extend .line;
+  height: 260px;
+}
+
+#line-2 {
+  margin-top: 54px;
+  @extend .line;
+  height: 131px;
+}
+
+#desc {
+  margin-top: 35px;
+  @extend .center;
+  width: 711px;
+
+  @extend .KievitSlab;
+  font-size: 27px;
+  line-height: 1.37;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #454545;
+}
+
+.center {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#what-we-do {
+  margin-top: 121px;
+  @extend .center;
+  @extend .KievitSlab;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+#chock-full-of-features {
+  margin-top: 36px;
+  @extend .center;
+  @extend .MyriadPro;
+  font-size: 17px;
+  text-align: center;
+  color: #606060;
+}
+
+#des-dev-mob_web {
+  margin-top: 89px;
+  display: flex;
+  justify-content: space-around;
+
+  > div {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  img {
+    @extend .center;
+  }
+
+  .title {
+    margin-top: 89px;
+
+    @extend .MyriadPro;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: black;
+  }
+
+  .description {
+    margin-top: 36px;
+
+    @extend .MyriadPro;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+#contact-box {
+  margin-top: 140px;
+  padding-top: 99px;
+  padding-bottom: 99px;
+  width: 100%;
+
+  background-color: #f7f7f7;
+
+  #lets-get-in-touch {
+    @extend .KievitSlab;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #000000;
+  }
+
+  #email-container {
+    margin-top: 52px;
+
+    display: flex;
+    > div {
+      flex-grow: 1;
+    }
+
+    #email-form {
+      background-color: #ffffff;
+      box-shadow: 0 11px 22px 3px rgba(183, 183, 183, 0.22);
+
+      display: flex;
+
+      #email-input {
+        flex-grow: 3;
+        padding: 25px 57px;
+        > input {
+          //width: 100%;
+          //height: 100%;
+          border: 0;
+          @extend .KievitSlab;
+          font-size: 16px;
+          font-weight: bold;
+          letter-spacing: 0.2px;
+          //text-align: center;
+          color: #cccccc;
+        }
+      }
+
+      #contact-button {
+        flex-grow: 2;
+        @extend .helvetica-bold;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 100%;
+        font-size: 14px;
+        color: #ffffff;
+        background-color: #000000;
+      }
+    }
   }
 }
 
