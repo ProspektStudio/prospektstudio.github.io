@@ -1,0 +1,101 @@
+$header-margin: 89px;
+
+#header-nav {
+  margin-top: $header-margin;
+  //margin-left: $header-margin;
+  //justify-content: space-between;
+  //background-color: lightblue;
+
+  > * {
+
+    //flex-grow: 2;
+  }
+}
+
+#brand {
+  //background-color: gold;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+#space {
+  flex-grow: 3;
+}
+
+#navigation {
+  //background-color: red;
+
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+
+  flex-grow: 2;
+  justify-content: space-around;
+}
+
+.prospekt {
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.logo {
+  width: 4pt;
+  height: 4pt;
+  -webkit-transform: rotate(-315deg);
+  transform: rotate(-315deg);
+  //background-color: #ffffff;
+  border: solid 6.3px #2c2c2c;
+}
+
+.bubble {
+  z-index: -1;
+}
+
+$bubble-diameter: 90vw;
+$max-bubble-diameter: 900px;
+#big-bubble {
+
+  width: $bubble-diameter;
+  height: $bubble-diameter;
+
+  max-width: $max-bubble-diameter;
+  max-height: $max-bubble-diameter;
+
+  background-image: linear-gradient(307deg, #000000, #303943);
+  border-radius: 50%;
+
+  position: absolute;
+  overflow: hidden;
+  top: calc(#{$header-margin} - #{$bubble-diameter}/2);
+  right: calc(#{$header-margin} - #{$bubble-diameter}/2);
+}
+
+@media screen and (min-width: 1000px)  {
+  #big-bubble {
+    top: calc(#{$header-margin} - #{$max-bubble-diameter}/2);
+    right: calc(#{$header-margin} - #{$max-bubble-diameter}/2 + 30vw - 300px);
+  }
+}
+
+#little-bubble {
+  width: 124px;
+  height: 124px;
+  background-image: linear-gradient(315deg, #000000, #303943);
+}
+
+.home-our-work-cont {
+
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-end {
+  align-self: flex-end;
+}

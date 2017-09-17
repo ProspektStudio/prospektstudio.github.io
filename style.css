@@ -1,0 +1,64 @@
+#header-nav {
+  margin-top: 89px; }
+
+#brand {
+  flex-grow: 1;
+  justify-content: space-around; }
+
+#space {
+  flex-grow: 3; }
+
+#navigation {
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  flex-grow: 2;
+  justify-content: space-around; }
+
+.prospekt {
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 10px; }
+
+.logo {
+  width: 4pt;
+  height: 4pt;
+  -webkit-transform: rotate(-315deg);
+  transform: rotate(-315deg);
+  border: solid 6.3px #2c2c2c; }
+
+.bubble {
+  z-index: -1; }
+
+#big-bubble {
+  width: 90vw;
+  height: 90vw;
+  max-width: 900px;
+  max-height: 900px;
+  background-image: linear-gradient(307deg, #000000, #303943);
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  top: calc(89px - 90vw/2);
+  right: calc(89px - 90vw/2); }
+
+@media screen and (min-width: 1000px) {
+  #big-bubble {
+    top: calc(89px - 900px/2);
+    right: calc(89px - 900px/2 + 30vw - 300px); } }
+#little-bubble {
+  width: 124px;
+  height: 124px;
+  background-image: linear-gradient(315deg, #000000, #303943); }
+
+.flex-container {
+  display: flex; }
+
+.flex-end {
+  align-self: flex-end; }
+
+/*# sourceMappingURL=style.css.map */
