@@ -194,11 +194,15 @@ $header-margin: 89px;
 #des-dev-mob_web {
   margin-top: 89px;
   display: flex;
-  justify-content: space-around;
 
   > div {
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 60px;
+    margin-right: 60px;
+    flex: 2;
+  }
+
+  > .space {
+    flex: 1;
   }
 
   img {
@@ -209,7 +213,7 @@ $header-margin: 89px;
     margin-top: 89px;
 
     @extend .MyriadPro;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
     text-align: center;
@@ -220,7 +224,7 @@ $header-margin: 89px;
     margin-top: 36px;
 
     @extend .MyriadPro;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
     text-align: center;

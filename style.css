@@ -131,21 +131,23 @@ body {
 
 #des-dev-mob_web {
   margin-top: 89px;
-  display: flex;
-  justify-content: space-around; }
+  display: flex; }
   #des-dev-mob_web > div {
-    margin-left: 90px;
-    margin-right: 90px; }
+    margin-left: 60px;
+    margin-right: 60px;
+    flex: 2; }
+  #des-dev-mob_web > .space {
+    flex: 1; }
   #des-dev-mob_web .title {
     margin-top: 89px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
     text-align: center;
     color: black; }
   #des-dev-mob_web .description {
     margin-top: 36px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
     text-align: center;
