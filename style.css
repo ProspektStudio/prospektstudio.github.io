@@ -6,7 +6,7 @@ body {
   min-height: 100vw;
   overflow: hidden; }
 
-.helvetica-bold, #header-nav, #description #view-work, #contact-box #email-container #email-form #contact-button {
+.helvetica-bold, #header-nav, .brand .prospekt, #description #view-work, #contact-box #email-container #email-form #contact-button, #footer {
   font-family: Helvetica, sans-serif;
   font-weight: bold; }
 
@@ -190,6 +190,48 @@ body {
         font-size: 14px;
         color: #ffffff;
         background-color: #000000; }
+
+#footer {
+  display: flex;
+  align-items: stretch; }
+  #footer > div {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    display: flex; }
+  #footer .black {
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center; }
+  #footer #company {
+    flex-grow: 1; }
+    #footer #company .logo {
+      border-color: white; }
+    #footer #company #copyright {
+      margin-top: 28px;
+      opacity: 0.42;
+      font-size: 12px;
+      font-weight: bold; }
+  #footer #links {
+    flex-grow: 3;
+    justify-content: space-around;
+    font-size: 12px;
+    font-weight: bold; }
+    #footer #links > * {
+      text-align: center;
+      opacity: 0.63; }
+  #footer #social-media {
+    padding-left: 38px;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #1f1f1f; }
+    #footer #social-media img {
+      margin-right: 19px; }
 
 .bubble {
   z-index: -1;
