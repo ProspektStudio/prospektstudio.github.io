@@ -34,16 +34,16 @@ body {
   display: flex;
   margin-top: 89px; }
   #header-nav #brand {
-    flex-grow: 1;
+    flex-grow: 2;
     display: flex;
     justify-content: space-around; }
   #header-nav #space {
-    flex-grow: 3; }
+    flex-grow: 7; }
   #header-nav #navigation {
     font-size: 18px;
     text-align: left;
     color: white;
-    flex-grow: 2;
+    flex-grow: 3;
     display: flex;
     justify-content: space-around; }
 
@@ -134,8 +134,8 @@ body {
   display: flex;
   justify-content: space-around; }
   #des-dev-mob_web > div {
-    margin-left: 100px;
-    margin-right: 100px; }
+    margin-left: 90px;
+    margin-right: 90px; }
   #des-dev-mob_web .title {
     margin-top: 89px;
     font-size: 18px;
