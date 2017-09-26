@@ -47,14 +47,22 @@ a.button {
   #header-nav #space {
     flex-grow: 4; }
   #header-nav #navigation {
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     color: #969696;
     flex-grow: 3;
     display: flex;
     justify-content: space-around; }
-  #header-nav #navigation > *:hover {
-    color: white; }
+
+/* Effect 1 */
+.effect1 a {
+  color: #969696; }
+
+.effect1 a:hover {
+  color: white;
+  transition: color 1s;
+  -moz-transition: color 1s;
+  -webkit-transition: color 1s; }
 
 .brand {
   display: flex; }

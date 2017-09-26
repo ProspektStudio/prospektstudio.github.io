@@ -67,7 +67,7 @@ $header-margin: 89px;
   }
 
   #navigation {
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     color: #969696;
 
@@ -76,9 +76,22 @@ $header-margin: 89px;
     justify-content: space-around;
   }
 
-  #navigation > *:hover {
-    color: white;
-  }
+  //#navigation > *:hover {
+  //  color: white;
+  //}
+}
+
+/* Effect 1 */
+$transition-time: 1s;
+.effect1 a {
+  color: #969696;
+}
+
+.effect1 a:hover {
+  color: white;
+  transition: color $transition-time;
+  -moz-transition: color $transition-time;
+  -webkit-transition: color $transition-time;
 }
 
 .brand {
