@@ -1,0 +1,50 @@
+#who-we-are {
+  margin-left: 7vw;
+  margin-top: 200px;
+
+  @extend .KievitSlab;
+
+  #design-development-branding {
+    opacity: 0.75;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2.7px;
+    color: #454545;
+  }
+
+  #we-are-prospekt {
+    margin-top: 15px;
+
+    font-size: 58px;
+    line-height: 1.05;
+    letter-spacing: -2.9px;
+    color: black;
+  }
+
+  #design-development {
+    margin-top: 6px;
+
+    font-size: 58px;
+    letter-spacing: -2.9px;
+    color: #bebebe;
+  }
+
+  $button-height: 40px;
+  #view-work-lnk {
+
+    margin-top: 58px;
+
+    #view-work {
+      width: 124px;
+      height: $button-height;
+      background-color: #121212;
+
+      @extend .helvetica-bold;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-align: center;
+      line-height: $button-height;
+      color: #ffffff;
+    }
+  }
+}

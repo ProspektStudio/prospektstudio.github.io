@@ -1,0 +1,67 @@
+@import "../shared";
+
+#footer {
+
+  display: flex;
+  align-items: stretch;
+
+  @extend .helvetica-bold;
+
+  > div {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    display: flex;
+  }
+
+  .black {
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #company {
+    flex-grow: 1;
+    .logo {
+      border-color: white;
+    }
+    #copyright {
+      margin-top: 28px;
+      opacity: 0.42;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+  #links {
+    flex-grow: 3;
+    justify-content: space-around;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    > * {
+      text-align: center;
+      opacity: 0.63;
+    }
+  }
+  #social-media {
+    padding-left: 38px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #1f1f1f;
+
+    img {
+      margin-right: 19px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("../fonts/KievitSlabOffc-Book.ttf") format("truetype"); }
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("../fonts/KievitSlabOffc-Bold.ttf") format("truetype");
+  font-weight: bold; }
+.KievitSlab, #who-we-are, #desc, #what-we-do, #contact-box #lets-get-in-touch, #contact-box #email-container #email-form #email-input input {
+  font-family: KievitSlabOffc, sans-serif; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MYRIADPRO-REGULAR.OTF"); }
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MYRIADPRO-BOLD.OTF");
+  font-weight: bold; }
+.MyriadPro, #chock-full-of-features, #des-dev-mob_web .title, #des-dev-mob_web .description {
+  font-family: MyriadPro, sans-serif; }
+
+.helvetica-bold, #header-nav, .brand .prospekt, #who-we-are #view-work-lnk #view-work, #contact-box #email-container #email-form #contact-button, #footer {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold; }
+
 body {
   margin: 0;
   min-height: 100vw; }
@@ -6,36 +30,132 @@ body {
   min-height: 100vw;
   overflow: hidden; }
 
-.helvetica-bold, #header-nav, .brand .prospekt, #who-we-are #view-work-lnk #view-work, #contact-box #email-container #email-form #contact-button, #footer {
-  font-family: Helvetica, sans-serif;
-  font-weight: bold; }
-
-@font-face {
-  font-family: 'KievitSlabOffc';
-  src: url("fonts/KievitSlabOffc-Book.ttf") format("truetype"); }
-@font-face {
-  font-family: 'KievitSlabOffc';
-  src: url("fonts/KievitSlabOffc-Bold.ttf") format("truetype");
-  font-weight: bold; }
-.KievitSlab, #who-we-are, #desc, #what-we-do, #contact-box #lets-get-in-touch, #contact-box #email-container #email-form #email-input > input {
-  font-family: KievitSlabOffc, sans-serif; }
-
-@font-face {
-  font-family: 'MyriadPro';
-  src: url("fonts/MYRIADPRO-REGULAR.OTF"); }
-@font-face {
-  font-family: 'MyriadPro';
-  src: url("fonts/MYRIADPRO-BOLD.OTF");
-  font-weight: bold; }
-.MyriadPro, #chock-full-of-features, #des-dev-mob_web .title, #des-dev-mob_web .description {
-  font-family: MyriadPro, sans-serif; }
-
 a {
   color: inherit;
   text-decoration: inherit; }
 
 a.button {
   display: inline-block; }
+
+textarea:focus, input:focus {
+  outline: none; }
+
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("../fonts/KievitSlabOffc-Book.ttf") format("truetype"); }
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("../fonts/KievitSlabOffc-Bold.ttf") format("truetype");
+  font-weight: bold; }
+.KievitSlab, #who-we-are, #desc, #what-we-do, #contact-box #lets-get-in-touch, #contact-box #email-container #email-form #email-input input {
+  font-family: KievitSlabOffc, sans-serif; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MYRIADPRO-REGULAR.OTF"); }
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MYRIADPRO-BOLD.OTF");
+  font-weight: bold; }
+.MyriadPro, #chock-full-of-features, #des-dev-mob_web .title, #des-dev-mob_web .description {
+  font-family: MyriadPro, sans-serif; }
+
+.helvetica-bold, #header-nav, .brand .prospekt, #who-we-are #view-work-lnk #view-work, #contact-box #email-container #email-form #contact-button, #footer {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold; }
+
+.center, .line, #line-1, #line-2, #desc, #what-we-do, #chock-full-of-features, #des-dev-mob_web img {
+  display: table;
+  margin-left: auto;
+  margin-right: auto; }
+
+button.button {
+  border: hidden; }
+
+.bubble {
+  z-index: -1;
+  position: relative; }
+
+#big-bubble {
+  background-image: linear-gradient(307deg, #000000, #303943);
+  border-radius: 50%;
+  width: 90vw;
+  height: 90vw;
+  max-width: 900px;
+  max-height: 900px;
+  position: absolute;
+  top: calc(89px - 90vw/2);
+  right: calc(89px - 90vw/2); }
+
+@media screen and (min-width: 1000px) {
+  #big-bubble {
+    top: calc(89px - 900px/2);
+    right: calc(89px - 900px/2 + 30vw - 300px); } }
+#little-bubble {
+  width: 124px;
+  height: 124px;
+  background-image: linear-gradient(315deg, #000000, #303943); }
+
+.line, #line-1, #line-2 {
+  width: 1px;
+  background-color: #d8d8d8; }
+
+#line-1 {
+  height: 241px; }
+
+#line-2 {
+  margin-top: 54px;
+  height: 131px; }
+
+.square, #square-1, #square-2 {
+  background-image: linear-gradient(315deg, #000000, #303943);
+  position: absolute;
+  margin-top: 20px; }
+
+#square-1 {
+  width: 93px;
+  height: 93px;
+  margin-left: 10vw; }
+
+#square-2 {
+  width: 172px;
+  height: 172px;
+  margin-left: 80vw; }
+
+@media screen and (max-width: 1130px) {
+  .square, #square-1, #square-2 {
+    margin-top: 120px; } }
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("../fonts/KievitSlabOffc-Book.ttf") format("truetype"); }
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("../fonts/KievitSlabOffc-Bold.ttf") format("truetype");
+  font-weight: bold; }
+.KievitSlab, #who-we-are, #desc, #what-we-do, #contact-box #lets-get-in-touch, #contact-box #email-container #email-form #email-input input {
+  font-family: KievitSlabOffc, sans-serif; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MYRIADPRO-REGULAR.OTF"); }
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MYRIADPRO-BOLD.OTF");
+  font-weight: bold; }
+.MyriadPro, #chock-full-of-features, #des-dev-mob_web .title, #des-dev-mob_web .description {
+  font-family: MyriadPro, sans-serif; }
+
+.helvetica-bold, #header-nav, .brand .prospekt, #who-we-are #view-work-lnk #view-work, #contact-box #email-container #email-form #contact-button, #footer {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold; }
+
+.center, .line, #line-1, #line-2, #desc, #what-we-do, #chock-full-of-features, #des-dev-mob_web img {
+  display: table;
+  margin-left: auto;
+  margin-right: auto; }
+
+button.button {
+  border: hidden; }
 
 #header-nav {
   display: flex;
@@ -60,9 +180,9 @@ a.button {
 
 .effect1 a:hover {
   color: white;
-  transition: color 1s;
-  -moz-transition: color 1s;
-  -webkit-transition: color 1s; }
+  transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -webkit-transition: color 0.5s; }
 
 .brand {
   display: flex; }
@@ -109,38 +229,41 @@ a.button {
       line-height: 40px;
       color: #ffffff; }
 
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("../fonts/KievitSlabOffc-Book.ttf") format("truetype"); }
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("../fonts/KievitSlabOffc-Bold.ttf") format("truetype");
+  font-weight: bold; }
+.KievitSlab, #who-we-are, #desc, #what-we-do, #contact-box #lets-get-in-touch, #contact-box #email-container #email-form #email-input input {
+  font-family: KievitSlabOffc, sans-serif; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MYRIADPRO-REGULAR.OTF"); }
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MYRIADPRO-BOLD.OTF");
+  font-weight: bold; }
+.MyriadPro, #chock-full-of-features, #des-dev-mob_web .title, #des-dev-mob_web .description {
+  font-family: MyriadPro, sans-serif; }
+
+.helvetica-bold, #header-nav, .brand .prospekt, #who-we-are #view-work-lnk #view-work, #contact-box #email-container #email-form #contact-button, #footer {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold; }
+
+.center, .line, #line-1, #line-2, #desc, #what-we-do, #chock-full-of-features, #des-dev-mob_web img {
+  display: table;
+  margin-left: auto;
+  margin-right: auto; }
+
+button.button {
+  border: hidden; }
+
 #description {
   margin-top: 100px; }
 
-.line, #line-1, #line-2 {
-  width: 1px;
-  background-color: #d8d8d8; }
-
-#line-1 {
-  height: 241px; }
-
-#line-2 {
-  margin-top: 54px;
-  height: 131px; }
-
-.square, #square-1, #square-2 {
-  background-image: linear-gradient(315deg, #000000, #303943);
-  position: absolute;
-  margin-top: 20px; }
-
-#square-1 {
-  width: 93px;
-  height: 93px;
-  margin-left: 10vw; }
-
-#square-2 {
-  width: 172px;
-  height: 172px;
-  margin-left: 80vw; }
-
-@media screen and (max-width: 1130px) {
-  .square, #square-1, #square-2 {
-    margin-top: 120px; } }
 #desc {
   margin-top: 14px;
   width: 711px;
@@ -149,11 +272,6 @@ a.button {
   letter-spacing: 0.3px;
   text-align: center;
   color: #454545; }
-
-.center, .line, #line-1, #line-2, #desc, #what-we-do, #chock-full-of-features, #des-dev-mob_web img {
-  display: table;
-  margin-left: auto;
-  margin-right: auto; }
 
 #what-we-do {
   margin-top: 121px;
@@ -201,6 +319,38 @@ a.button {
     text-align: center;
     color: #000000; }
 
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("../fonts/KievitSlabOffc-Book.ttf") format("truetype"); }
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("../fonts/KievitSlabOffc-Bold.ttf") format("truetype");
+  font-weight: bold; }
+.KievitSlab, #who-we-are, #desc, #what-we-do, #contact-box #lets-get-in-touch, #contact-box #email-container #email-form #email-input input {
+  font-family: KievitSlabOffc, sans-serif; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MYRIADPRO-REGULAR.OTF"); }
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MYRIADPRO-BOLD.OTF");
+  font-weight: bold; }
+.MyriadPro, #chock-full-of-features, #des-dev-mob_web .title, #des-dev-mob_web .description {
+  font-family: MyriadPro, sans-serif; }
+
+.helvetica-bold, #header-nav, .brand .prospekt, #who-we-are #view-work-lnk #view-work, #contact-box #email-container #email-form #contact-button, #footer {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold; }
+
+.center, .line, #line-1, #line-2, #desc, #what-we-do, #chock-full-of-features, #des-dev-mob_web img {
+  display: table;
+  margin-left: auto;
+  margin-right: auto; }
+
+button.button {
+  border: hidden; }
+
 #contact-box {
   margin-top: 140px;
   padding-top: 99px;
@@ -224,12 +374,31 @@ a.button {
       display: flex; }
       #contact-box #email-container #email-form #email-input {
         flex-grow: 3;
-        padding: 25px 57px; }
-        #contact-box #email-container #email-form #email-input > input {
+        padding: 25px 40px;
+        min-width: 300px; }
+        #contact-box #email-container #email-form #email-input input {
+          width: 100%;
           border: 0;
           font-size: 16px;
           font-weight: bold;
           letter-spacing: 0.2px;
+          color: gray; }
+        #contact-box #email-container #email-form #email-input ::-webkit-input-placeholder {
+          /* WebKit, Blink, Edge */
+          color: #cccccc; }
+        #contact-box #email-container #email-form #email-input :-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: #cccccc;
+          opacity: 1; }
+        #contact-box #email-container #email-form #email-input ::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: #cccccc;
+          opacity: 1; }
+        #contact-box #email-container #email-form #email-input :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: #cccccc; }
+        #contact-box #email-container #email-form #email-input ::-ms-input-placeholder {
+          /* Microsoft Edge */
           color: #cccccc; }
       #contact-box #email-container #email-form #contact-button {
         flex-grow: 2;
@@ -242,6 +411,35 @@ a.button {
         font-size: 14px;
         color: #ffffff;
         background-color: #000000; }
+
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("../fonts/KievitSlabOffc-Book.ttf") format("truetype"); }
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url("../fonts/KievitSlabOffc-Bold.ttf") format("truetype");
+  font-weight: bold; }
+.KievitSlab, #who-we-are, #desc, #what-we-do, #contact-box #lets-get-in-touch, #contact-box #email-container #email-form #email-input input {
+  font-family: KievitSlabOffc, sans-serif; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MYRIADPRO-REGULAR.OTF"); }
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MYRIADPRO-BOLD.OTF");
+  font-weight: bold; }
+.MyriadPro, #chock-full-of-features, #des-dev-mob_web .title, #des-dev-mob_web .description {
+  font-family: MyriadPro, sans-serif; }
+
+.helvetica-bold, #header-nav, .brand .prospekt, #who-we-are #view-work-lnk #view-work, #contact-box #email-container #email-form #contact-button, #footer {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold; }
+
+.center, .line, #line-1, #line-2, #desc, #what-we-do, #chock-full-of-features, #des-dev-mob_web img {
+  display: table;
+  margin-left: auto;
+  margin-right: auto; }
 
 button.button {
   border: hidden; }
@@ -291,29 +489,5 @@ button.button {
       margin-right: 19px;
       width: 16px;
       height: 16px; }
-
-.bubble {
-  z-index: -1;
-  position: relative; }
-
-#big-bubble {
-  background-image: linear-gradient(307deg, #000000, #303943);
-  border-radius: 50%;
-  width: 90vw;
-  height: 90vw;
-  max-width: 900px;
-  max-height: 900px;
-  position: absolute;
-  top: calc(89px - 90vw/2);
-  right: calc(89px - 90vw/2); }
-
-@media screen and (min-width: 1000px) {
-  #big-bubble {
-    top: calc(89px - 900px/2);
-    right: calc(89px - 900px/2 + 30vw - 300px); } }
-#little-bubble {
-  width: 124px;
-  height: 124px;
-  background-image: linear-gradient(315deg, #000000, #303943); }
 
 /*# sourceMappingURL=style.css.map */

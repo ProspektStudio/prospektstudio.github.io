@@ -1,0 +1,82 @@
+@import "../shared";
+
+#contact-box {
+  margin-top: 140px;
+  padding-top: 99px;
+  padding-bottom: 99px;
+  width: 100%;
+
+  background-color: #f7f7f7;
+
+  #lets-get-in-touch {
+    @extend .KievitSlab;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #000000;
+  }
+
+  #email-container {
+    margin-top: 52px;
+
+    display: flex;
+    > div {
+      flex-grow: 1;
+    }
+
+    #email-form {
+      background-color: #ffffff;
+      box-shadow: 0 11px 22px 3px rgba(183, 183, 183, 0.22);
+
+      display: flex;
+
+      #email-input {
+        flex-grow: 3;
+        padding: 25px 40px;
+        min-width: 300px;
+        input {
+          width: 100%;
+          border: 0;
+          @extend .KievitSlab;
+          font-size: 16px;
+          font-weight: bold;
+          letter-spacing: 0.2px;
+          color: gray;
+        }
+        $placeholder-color: #cccccc;
+        ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+          color:    $placeholder-color;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+          color:    $placeholder-color;
+          opacity:  1;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+          color:    $placeholder-color;
+          opacity:  1;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color:    $placeholder-color;
+        }
+        ::-ms-input-placeholder { /* Microsoft Edge */
+          color:    $placeholder-color;
+        }
+      }
+
+      #contact-button {
+        flex-grow: 2;
+        padding-left: 60px;
+        padding-right: 60px;
+        @extend .helvetica-bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 100%;
+        font-size: 14px;
+        color: #ffffff;
+        background-color: #000000;
+      }
+    }
+  }
+}

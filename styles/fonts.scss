@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url('../fonts/KievitSlabOffc-Book.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'KievitSlabOffc';
+  src: url('../fonts/KievitSlabOffc-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+.KievitSlab {
+  font-family: KievitSlabOffc, sans-serif;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../fonts/MYRIADPRO-REGULAR.OTF');
+}
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../fonts/MYRIADPRO-BOLD.OTF');
+  font-weight: bold;
+}
+.MyriadPro {
+  font-family: MyriadPro, sans-serif;
+}
+
+.helvetica-bold {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}

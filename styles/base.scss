@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  min-height: 100vw;
+}
+
+.viewport {
+  min-height: 100vw;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a.button {
+  display: inline-block;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}

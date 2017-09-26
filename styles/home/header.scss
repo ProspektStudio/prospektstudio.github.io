@@ -1,0 +1,64 @@
+@import "../shared";
+
+#header-nav {
+  display: flex;
+  margin-top: $header-margin;
+
+  @extend .helvetica-bold;
+
+  #brand {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #space {
+    flex-grow: 4;
+  }
+
+  #navigation {
+    font-size: 16px;
+    text-align: left;
+    color: #969696;
+
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  //#navigation > *:hover {
+  //  color: white;
+  //}
+}
+
+/* Effect 1 */
+$transition-time: 0.5s;
+.effect1 a {
+  color: #969696;
+}
+
+.effect1 a:hover {
+  color: white;
+  transition: color $transition-time;
+  -moz-transition: color $transition-time;
+  -webkit-transition: color $transition-time;
+}
+
+.brand {
+  display: flex;
+
+  .logo {
+    width: 4pt;
+    height: 4pt;
+    -webkit-transform: rotate(-315deg);
+    transform: rotate(-315deg);
+    border: solid 6.3px #2c2c2c;
+  }
+
+  .prospekt {
+    @extend .helvetica-bold;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+  }
+}
